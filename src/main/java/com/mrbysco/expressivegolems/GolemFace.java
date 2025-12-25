@@ -1,7 +1,8 @@
 package com.mrbysco.expressivegolems;
 
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
+import org.jetbrains.annotations.NotNull;
 
 public enum GolemFace implements StringRepresentable {
 	DEFAULT("default"),
@@ -23,12 +24,14 @@ public enum GolemFace implements StringRepresentable {
 		this.name = name;
 	}
 
-	public Identifier getTextureLocation() {
+	public ResourceLocation getTextureLocation() {
 		return ExpressiveGolems.modLoc("textures/entity/snow_golem/face/" + this.name + "_face.png");
 	}
 
+	@SuppressWarnings("deprecation")
 	public static final StringRepresentable.EnumCodec<GolemFace> CODEC = StringRepresentable.fromEnum(GolemFace::values);
 
+	@NotNull
 	@Override
 	public String getSerializedName() {
 		return this.name;

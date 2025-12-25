@@ -2,7 +2,7 @@ package com.mrbysco.expressivegolems.handler;
 
 import com.mrbysco.expressivegolems.GolemFace;
 import com.mrbysco.expressivegolems.registry.ExpressiveAttachments;
-import net.minecraft.world.entity.animal.golem.SnowGolem;
+import net.minecraft.world.entity.animal.SnowGolem;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.EntityEvent;

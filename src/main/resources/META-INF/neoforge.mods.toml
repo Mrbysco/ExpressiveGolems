@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+issueTrackerURL="https://github.com/Mrbysco/ExpressiveGolems/issues"
+license="MIT"
+
+[[mods]]
+modId="expressive_golems"
+version="${file.jarVersion}"
+displayName="Expressive Golems"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/expressive-golems"
+authors="Mrbysco, ShyNieke"
+description='''
+Adds some more faces to snow golem heads!
+'''
+[[dependencies.expressive_golems]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.11,1.22)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.expressive_golems]]
+modId="neoforge"
+type="required"
+versionRange="[21.11.0-beta,)"
+ordering="NONE"
+side="BOTH"
+[[mixins]]
+config="expressive_golems.mixins.json"

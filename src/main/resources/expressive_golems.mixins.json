@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "compatibilityLevel": "JAVA_21",
+  "package": "com.mrbysco.expressivegolems.mixin",
+  "target": "@env(DEFAULT)",
+  "mixins": [
+  ],
+  "client": [
+    "SnowGolemRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
